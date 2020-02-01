@@ -1,11 +1,105 @@
 [
     {
-        "category": "blah",
+        "category": "90's Heartthrobs",
         "people": [
             "Leonardo DiCaprio",
             "Brad Pitt",
-            "Johnny Depp"
+            "Johnny Depp",
+            "Freddie Prinze Jr",
+            "Will Smith",
+            "Mark Wahlberg",
+            "Ryan Phillippe",
+            "James Van Der Beek",
+            "Denzel Washington",
+            "Jason Priestly",
+            "Keanu Reeves",
+            "John Stamos"
+        ]
+    },
+    {
+        "category": "Rom-Com Regulars",
+        "people": [
+            "Katherine Heigl",
+            "Bradley Cooper",
+            "Jennifer Garner",
+            "Patrick Dempsey",
+            "Julia Stiles",
+            "Ashton Kutcher",
+            "Jennifer Lopez",
+            "Paul Rudd",
+            "Rachel McAdams",
+            "Ryan Reynolds",
+            "Anna Kendrick",
+            "Ryan Gosling"
+        ]
+    }
+    ,
+    {
+        "category": "Action Stars",
+        "people": [
+            "Michelle Rodriguez",
+            "Tom Cruise",
+            "Milla Jovovich",
+            "Arnold Schwarzenegger",
+            "Zoe Saldana",
+            "Kate Beckinsale",
+            "Jason Statham",
+            "Angelina Jolie",
+            "Wesley Snipes",
+            "Bruce Willis",
+            "Zhang Ziyi",
+            "Keanu Reeves"
+        ]
+    },
+    {
+        "category": "Avengers",
+        "people": [
+            "Robert Downey Jr",
+            "Chris Hemsworth",
+            "Scarlett Johansson",
+            "Jeremy Renner",
+            "Chadwick Boseman",
+            "Chris Evans",
+            "Elizabeth Olson",
+            "Mark Ruffalo",
+            "Anthony Mackie",
+            "Brie Larson",
+            "Paul Bettany",
+            "Zoe Saldana"
+        ]
+    },
+    {
+        "category": "Workplace Comedies",
+        "people": [
+            "Amy Poehler",
+            "Steve Carell",
+            "Andy Samberg",
+            "Craig Robinson",
+            "Nick Offerman",
+            "Angela Kinsey",
+            "Joe Lo Truglio",
+            "Rashida Jones",
+            "Stephanie Beatriz",
+            "Terry Crews",
+            "Aziz Ansari",
+            "Rainn Wilson"
+        ]
+    },
+    {
+        "category": "Scream Queens",
+        "people": [
+            "Danielle Harris",
+            "Neve Campbell",
+            "Jane Levy",
+            "Milla Jovovich",
+            "Taissa Farmiga",
+            "Ali Larter",
+            "Emma Roberts",
+            "Alexandra Breckenridge",
+            "Jennifer Love Hewitt",
+            "Sheri Moon Zombie",
+            "Sarah Michelle Gellar",
+            "Gabourey Sidibe"
         ]
     }
 ]
-
