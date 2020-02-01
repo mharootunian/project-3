@@ -1,4 +1,4 @@
 module.exports = {
-    Face: require('./Category'),
+    Category: require('./Category'),
     User: require('./User')
 };

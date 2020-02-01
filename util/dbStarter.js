@@ -1,13 +1,15 @@
 const axios = require('axios');
 require('dotenv').config();
-// Import faces.json
+const mongoose = require('mongoose');
+const db = require("../models");
 const faces = require("./faces.json");
+
+let MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/facesTestDB";
+
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 // forEach on faces.json --> Axios call to get images
 const apiKey = process.env.MYAPIKEY;
-let peopleArr = [
-
-];
 
 faces.forEach(category => {
     category.people.forEach(person => {
@@ -17,9 +19,20 @@ faces.forEach(category => {
                     name: person,
                     img: response.data.results[0].profile_path
                 };
-                peopleArr.push(newPerson);
+                db.Category.findOneAndUpdate(
+                    { categoryName: category.category },
+                    { $push: { people: newPerson } },
+                    { upsert: true },
+                    (err, doc) => {
+                        if (err) {
+                            console.log(err);
+                        }
+                        else {
+                            console.log(`Person added: ${doc}`);
+                        };
+                    }
+                );
             });
     });
-    // db.save() peopleArr
 });
-    
+
