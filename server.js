@@ -45,6 +45,8 @@ const io = require('socket.io').listen(server);
 // io.set('origins', 'localhost:*');
 require("./lib/socketConfig")(io);
 
+console.log("socketConfig loaded");
+
 // Send every other request to the React app
 // Define any API routes before this runs
 
