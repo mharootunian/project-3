@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const PORT = process.env.PORT || 3001;
 const app = express();
 const cors = require("cors");
+const db = require("./client/models");
 // Define middleware here
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
@@ -46,6 +47,21 @@ require("./lib/socketConfig")(io);
 
 // Send every other request to the React app
 // Define any API routes before this runs
+
+app.get("/api/game/:id", (req, res) => {
+    let category = req.params.id;
+
+    db.Category.find({
+        categoryName: category 
+    })
+    .then((results) => {
+        res.json(results);
+    })
+    .catch((err) => {
+        console.log(err);
+    });
+})
+
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
