@@ -1,0 +1,17 @@
+#CreateGame{
+  
+    width: 200px;
+    height: 100px;
+    /* float : 'left'; */
+    padding-right : '5px';
+}
+
+ #fuckThis{
+    width: 600px;
+    height: 300px;
+    /* background-color: black; */
+} 
+
+.list-group-item1{
+    margin-top: 1px;
+}

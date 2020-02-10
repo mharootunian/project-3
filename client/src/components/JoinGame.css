@@ -1,0 +1,29 @@
+
+#JoinGame{
+   
+    width: 200px;
+    height: 100px;
+    float : 'right';
+    padding-right : '5px';
+}
+
+ #fuckThis2{
+    width: 600px;
+    height: 300px;
+      
+} 
+
+.list-group-item2{
+    margin-top: 1px;
+}
+
+.card-body{
+    background-image:url(https://i.pinimg.com/474x/1b/d9/c1/1bd9c162a64a2b44736f6c08af27acbe.jpg);
+}
+.card-title1{
+    font-family:'Open Sans', sans-serif; 
+    color: bisque;
+    padding: 0px;
+}
+
+
