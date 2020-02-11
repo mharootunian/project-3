@@ -1,16 +1,22 @@
 import React from "react";
 import { useAuth0 } from "../../react-auth0-spa";
-import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 const Navbar = () => {
+    const titleStyle = {
+        color: "red",
+        "font-size": 45
+    };
+
     const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
 
     return (
         <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
-            <a className="navbar-brand" href="/">What the Face?!</a>
-
+            <div id="navbar-title">
+            <a className="navbar-brand" href="/">What the <span style={titleStyle}>Face?!</span></a>
+            </div>
             {!isAuthenticated && (
-                <button className="btn btn-light ml-auto"
+                <button className="btn btn-light ml-auto" id="login-btn"
                     onClick={() => loginWithRedirect({})}>Login/Sign Up</button>
             )}
 
