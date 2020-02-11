@@ -13,7 +13,7 @@ const apiKey = process.env.MYAPIKEY;
 
 faces.forEach(category => {
     category.people.forEach(person => {
-        axios.get(`https://api.themoviedb.org/3/search/person?api_key=${apiKey}&language=en-US&query=${person}&page=1&include_adult=false`)
+        axios.get(`https://api.themoviedb.org/3/search/person?api_key=dfe8bb0985a95435ce57b6a6549b2155&language=en-US&query=${person}&page=1&include_adult=false`)
             .then(response => {
                 let newPerson = {
                     name: person,

@@ -1,8 +1,9 @@
 import React, {Component} from 'react'
 import {Launcher} from 'react-chat-window'
 // import io from 'socket.io-client';
-import Game2 from '../GameBoard/Game2';
+import GameBoard from '../GameBoard/GameBoard';
 import './ChatBox.css';
+
 
 
 
@@ -37,8 +38,8 @@ class ChatBox extends Component {
       return (<div>
         <Launcher
           agentProfile={{
-            teamName: 'What Da',
-            imageUrl: 'https://a.slack-edge.com/66f9/img/avatars-teams/ava_0001-34.png'
+            teamName: 'What The Face',
+            imageUrl: 'https://i.pinimg.com/originals/d6/b9/3d/d6b93d399af39f288fb17e092a7694a2.gif'
           }}
           onMessageWasSent={this._onMessageWasSent.bind(this)}
           messageList={this.state.messageList}

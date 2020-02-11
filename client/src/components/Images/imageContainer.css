@@ -1,21 +1,4 @@
-.parentDiv{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    flex-direction: column;
-    width: 210px;
-    
-    background-color: transparent;
-    height: 500px;
-    justify-content: space-evenly;
-    position: relative;
-    
-    margin-top: 20px;
-    
-   
-    
-    
-}
+
 
 h2{
   font-size: 80px;
@@ -24,8 +7,6 @@ h2{
 }
 
 #deck {  
-    width: 597px;
-    height: 600px;
 	background: transparent;
 	padding: 1rem;
 	border-radius: 4px;
@@ -39,8 +20,6 @@ h2{
 }
 
 .card {
-    width: 130px;
-    height: 120px;
     position: sticky;
     top: 50%;
     left: 50%; 
@@ -53,12 +32,7 @@ h2{
 }
 
 
-.card-img-top{
-  width:130px;
-  height: 11.5vw;
-  object-fit: cover;
-  
-}
+
 
 .card:hover{
   transform: rotateY(180deg);
@@ -88,8 +62,7 @@ h2{
 }
 
 .card figure{
-  width: 130px;
-  height: 120px;
+ 
   position: absolute;
   margin: 0;
   

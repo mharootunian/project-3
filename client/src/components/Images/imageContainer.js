@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import Game2 from '../GameBoard/Game2';
+import GameBoard from '../GameBoard/GameBoard';
 // import Index from './index';
 import './imageContainer.css';
-import { render } from '@testing-library/react';
-import 'bootstrap/dist/css/bootstrap.css';
 
 
 
@@ -44,7 +42,7 @@ const ImageContainer = () => {
 
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 ">
                 <div class="card">
-                    <figure class="front"><h3>front</h3><img class="img-top img-fluild" src=""></img></figure>
+                    <figure class="front"><img class="img-top img-fluild" src=""></img></figure>
                     <figure class="back">
 
                         <h2>X</h2>

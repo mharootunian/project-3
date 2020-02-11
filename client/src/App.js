@@ -1,14 +1,14 @@
 import React from "react";
 import NavBar from "./components/Navbar/Navbar";
-import Game from "./pages/Game";
+// import Game from "./pages/Game";
 import { useAuth0 } from "./react-auth0-spa";
 import { Router, Route, Switch } from "react-router-dom";
 import history from "./utils/history";
+import CardFlip from "../src/components/CardFlip/CardFlip";
+import GameBoard from "./components/GameBoard/GameBoard";
+// import YoPic from "../src/components/YoPic/YoPic";
+// import imageContainer from "../src/components/Images/imageContainer";
 const socket = require('socket.io-client')('http://localhost:3001');
-import GameBoard from "../src/components/GameBoard/GameBorard";
-import YoPic from "../src/components/YoPic/YoPic";
-import Images from "../src/components/Images/imageContainer";
-
 function App() {
 
   // componentDidMount() {
@@ -31,7 +31,8 @@ function App() {
         <Switch>
           {/* <Route exact path="/" component={Home} />
           <Route exact path="/lobby" component={Lobby} /> */}
-          <Route path="/game/:id" component={Game} />
+          <Route path="/game/:id" component={GameBoard} />
+          
         </Switch>
       </Router>
     </div>

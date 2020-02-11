@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import Game2 from '../GameBoard/Game2';
-import 'bootstrap/dist/css/bootstrap.css';
+import GameBoard from '../GameBoard/GameBoard';
 import './YoPic.css'
 
 
