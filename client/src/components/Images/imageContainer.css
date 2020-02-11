@@ -1,0 +1,102 @@
+.parentDiv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: column;
+    width: 210px;
+    
+    background-color: transparent;
+    height: 500px;
+    justify-content: space-evenly;
+    position: relative;
+    
+    margin-top: 20px;
+    
+   
+    
+    
+}
+
+h2{
+  font-size: 80px;
+  color: red;
+  text-align: center;
+}
+
+#deck {  
+    width: 597px;
+    height: 600px;
+	background: transparent;
+	padding: 1rem;
+	border-radius: 4px;
+	box-shadow: 8px 9px 26px 0 rgba(23, 41, 56, 0.5);
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+    /* margin: 0 0 3em; */
+    margin-right: 90px;
+}
+
+.card {
+    width: 130px;
+    height: 120px;
+    position: sticky;
+    top: 50%;
+    left: 50%; 
+    justify-content: center;
+    transition: transform 1s ease-in-out;
+    cursor: pointer;
+    transform-style: preserve-3d;
+   
+    border: 10px soild black;
+}
+
+
+.card-img-top{
+  width:130px;
+  height: 11.5vw;
+  object-fit: cover;
+  
+}
+
+.card:hover{
+  transform: rotateY(180deg);
+}
+
+.card .front{
+  background: aqua;
+  backface-visibility: hidden;
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: blue;
+}
+
+.card .back{
+  background: black;
+  color:red;
+  transform: rotateY(180deg);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  
+}
+
+.card figure{
+  width: 130px;
+  height: 120px;
+  position: absolute;
+  margin: 0;
+  
+}
+ 
+
+
+
+
+

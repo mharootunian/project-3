@@ -5,6 +5,9 @@ import { useAuth0 } from "./react-auth0-spa";
 import { Router, Route, Switch } from "react-router-dom";
 import history from "./utils/history";
 const socket = require('socket.io-client')('http://localhost:3001');
+import GameBoard from "../src/components/GameBoard/GameBorard";
+import YoPic from "../src/components/YoPic/YoPic";
+import Images from "../src/components/Images/imageContainer";
 
 function App() {
 
