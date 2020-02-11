@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "./components/Navbar/Navbar";
-// import Game from "./pages/Game";
+//import Game from "./pages/Game";
+import Lobby from "./pages/Lobby";
 import { useAuth0 } from "./react-auth0-spa";
 import { Router, Route, Switch } from "react-router-dom";
 import history from "./utils/history";
@@ -29,10 +30,9 @@ function App() {
           <NavBar />
         </header>
         <Switch>
-          {/* <Route exact path="/" component={Home} />
-          <Route exact path="/lobby" component={Lobby} /> */}
+          {/* <Route exact path="/" component={Home} />*/}
+          <Route exact path="/lobby" component={Lobby} />
           <Route path="/game/:id" component={GameBoard} />
-          
         </Switch>
       </Router>
     </div>
