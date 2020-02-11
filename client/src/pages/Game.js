@@ -24,6 +24,18 @@ class Game extends React.Component {
             });
     };
 
+    makeGuess = (e) => {
+        e.preventDefault();
+        let guess = e.currentTarget.value;
+
+        if (guess === this.state.yourPerson.name) {
+            // Something tells them they win!
+        }
+        else {
+            // You lose!
+        };
+    }
+
     render() {
         return (
             <div>
@@ -53,7 +65,9 @@ class Game extends React.Component {
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                     {this.state.people.map(person => (
-                                        <button class="dropdown-item" type="button">{person.name}</button>
+                                        <button class="dropdown-item" type="button"
+                                        value={person.name} 
+                                        onClick={this.makeGuess}>{person.name}</button>
                                     ))}
                                 </div>
                             </div>
