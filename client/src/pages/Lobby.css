@@ -1,3 +1,11 @@
 .aws-btn {
-    width: 260px;
+    width: 275px;
+    margin: 15px 0px;
+}
+.btn-container {
+    margin-top: 10px;
+    border: 5px solid black;
+}
+#column-titles {
+    font-family: 'Oswald', sans-serif;
 }

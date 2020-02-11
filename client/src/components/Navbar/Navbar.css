@@ -1,0 +1,12 @@
+.navbar-brand {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 35px;
+}
+#navbar-title {
+    margin-left: 39vw;
+}
+#login-btn {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    padding: 10px 15px;
+}
