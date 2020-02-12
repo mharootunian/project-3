@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
             <div id="navbar-title">
-            <a className="navbar-brand" href="/">What the <span style={titleStyle}>Face?!</span></a>
+            <a className="navbar-brand" href="/lobby">What the <span style={titleStyle}>Face?!</span></a>
             </div>
             {!isAuthenticated && (
                 <button className="btn btn-light ml-auto" id="login-btn"
