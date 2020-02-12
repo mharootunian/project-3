@@ -1,10 +1,5 @@
-import React, {Component} from 'react'
-import {Launcher} from 'react-chat-window'
-// import io from 'socket.io-client';
-import GameBoard from '../GameBoard/GameBoard';
-import './ChatBox.css';
-
-
+import React, {Component} from 'react';
+import {Launcher} from 'react-chat-window';
 
 
 class ChatBox extends Component {
